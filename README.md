@@ -1,8 +1,5 @@
 # Introduction
 
-<<<<<<< HEAD
-
-
 Author: Ashraf Ibrahim <br>
 
 Date: 05.01.2021 <br>
@@ -16,20 +13,13 @@ Date: 05.01.2021 <br>
 
 This repo is for my Udacity Project "CICD Pipeline" in the DevOps Engineer for Azure course.  This project includes a Flask app for estimating home prices in Boston, but the focus is on the CI-CD pipeline behind it. 
 
->>>>>>> 628b52d313f87f7f136e4ed06b07126389c95ada
-
-
 # Project Plan
 
-
-<<<<<<< HEAD
 The elaboration of the course content and the ToDo's of the project were tracked by me via Trello. The exact work packages can be seen in my [Trello Board](https://trello.com/b/R4aXBL3X/cicd). I took care to create work packages that were as precise as possible so that they could be processed accurately. <br>
-
 
 I have recorded the sequence of processing I considered earlier in a [sheet](https://github.com/AshrafIb/CICD_PIPELINE/blob/master/PLAN.xlsx). 
 
 # Instructions
-
 
 ## Architectural Structure 
 
