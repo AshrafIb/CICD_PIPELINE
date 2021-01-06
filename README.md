@@ -1,5 +1,6 @@
 # Introduction
 
+<<<<<<< HEAD
 
 
 Author: Ashraf Ibrahim <br>
@@ -9,11 +10,19 @@ Date: 05.01.2021 <br>
 This repo is for my Udacity Project "CICD Pipeline" in the DevOps Engineer for Azure course. This project includes a Flask app for estimating home prices in Boston, but the focus is on the CI-CD pipeline behind it. 
 
 Any change in code automatically triggers Github actions so that the code is tested and linted (CI), then deployed via Azure Pipeline (CD), and finally deployed as a webapp from Azure. 
+=======
+Author: Ashraf Ibrahim <br>
+Date: 05.01.2021 <br>
+
+This repo is for my Udacity Project "CICD Pipeline" in the DevOps Engineer for Azure course.  This project includes a Flask app for estimating home prices in Boston, but the focus is on the CI-CD pipeline behind it. 
+
+>>>>>>> 628b52d313f87f7f136e4ed06b07126389c95ada
 
 
 # Project Plan
 
 
+<<<<<<< HEAD
 The elaboration of the course content and the ToDo's of the project were tracked by me via Trello. The exact work packages can be seen in my [Trello Board](https://trello.com/b/R4aXBL3X/cicd). I took care to create work packages that were as precise as possible so that they could be processed accurately. <br>
 
 
@@ -99,6 +108,9 @@ this will give you a result:
 
 
 
+=======
+View [Trello Board](https://trello.com/b/R4aXBL3X/cicd) 
+>>>>>>> 628b52d313f87f7f136e4ed06b07126389c95ada
 
 
 ![image-20210106075625422](README.assets/image-20210106075625422.png)
