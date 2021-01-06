@@ -4,7 +4,7 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
-#test:
+test:
 #	python -m pytest -vv test_hello.py
 
 lint:
