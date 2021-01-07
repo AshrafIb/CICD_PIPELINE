@@ -161,7 +161,7 @@ And finally, now you can make an estimate. To do this, go back to the repo's fol
 + Install Locus 
 
   ```
-  pip install locus
+  pip install locust
   ```
 
 + Go to your repo via cli and run the app.py 
