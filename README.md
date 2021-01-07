@@ -154,6 +154,37 @@ And finally, now you can make an estimate. To do this, go back to the repo's fol
 
 ![Logs](log.png)
 
+# Locus-Test
+
+ To create a stress test the Locus module can be used. In order for a test to be performed, the following steps must be carried out:
+
++ Install Locus 
+
+  ```
+  pip install locus
+  ```
+
++ Go to your repo via cli and run the app.py 
+
+  ```
+  python app.py
+  ```
+
++ Check if the locusfile.py is in your folder and run it 
+
+  ```
+  locust
+  ```
+
++ Now you can open a browser and go to the [http://localhost:8089](http://localhost:8089/)
+
++ Now you should see an input mask where you can enter the webpage as well as configurations for the stress test. 
+
+  ![locust_config](locust_config.png)
+
++ Finally, you can see the stress test running 
+
+  ![locust_test](locust_test.png)
 
 # Improvement Ideas 
 
