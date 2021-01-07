@@ -1,6 +1,6 @@
-from locust import HttpLocust, TaskSet, task
+from locust import HttpUser, TaskSet, task
 
-class CheckSite(TaskSet):
+class CheckSite(HttpUser):
 
     @task
     def get_tests(self):
