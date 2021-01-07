@@ -8,4 +8,4 @@ class CheckSite(TaskSet):
         
     @task
     def put_tests(self):
-        self.client.post("http://localhost:5000/predict"")
+        self.client.post("http://localhost:5000/predict")
