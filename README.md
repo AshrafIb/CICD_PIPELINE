@@ -11,6 +11,8 @@ Date: 05.01.2021 <br>
 This repo is for my Udacity Project "CICD Pipeline" in the DevOps Engineer for Azure course.  This project includes a Flask app for estimating home prices in Boston, but the focus is on the CI-CD pipeline behind it. 
 Any change in code automatically triggers Github actions so that the code is tested and linted (CI), then deployed via Azure Pipeline (CD), and finally deployed as a webapp from Azure. 
 
+You can watch my live-demo on [Youtube](https://youtu.be/rYgqRtU0mLA).  
+
 # Project Plan
 
 The elaboration of the course content and the ToDo's of the project were tracked by me via Trello. The exact work packages can be seen in my [Trello Board](https://trello.com/b/R4aXBL3X/cicd). I took care to create work packages that were as precise as possible so that they could be processed accurately. <br>
@@ -149,8 +151,9 @@ And finally, now you can make an estimate. To do this, go back to the repo's fol
   ```
 + which will give you the logs 
   
+
 ![Logs](log.png)
-  
+
 
 # Improvement Ideas 
 
