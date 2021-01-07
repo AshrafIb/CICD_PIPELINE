@@ -1,3 +1,7 @@
+
+
+
+
 # Introduction
 
 Author: Ashraf Ibrahim <br>
@@ -21,7 +25,7 @@ I have recorded the sequence of processing I considered earlier in a [sheet](htt
 
 The sequence in the picture corresponds to the steps mentioned above, the sequentiality clarifies the structural design as well as the interdependencies of individual steps.
 
-## Deployment of  Webapp in Azure 
+## Running Webapp in Azure Cloud Shell
 
 In order to start the project in your own Azure account, the following steps have to be performed: 
 
@@ -44,8 +48,6 @@ source ~/.uda_flask/bin/activate
 make all 
 
 ```
-
-
 
 The Git-Cloning Process should look like:
 
@@ -90,11 +92,69 @@ this will give you a result:
 ![PredictionAzure](Prediction_Azure.png)
 
 
+# Deployment of Webapp in Azure App Service
+
+To publish the webapp in Azure without pipeline, the following command must be entered into Azure Cloud Shell, but first maneuver to the repo's folder in Azure.: 
+
+```
+# Go to Folder
+cd NameOfRepo
+
+# Start Webapp   
+az webapp up -n NameOFWebapp
+```
+
+This should initiate the webapp with your selected name (e.g *my-flask-project.azurewebsites.net*) - of course you can visit this url.  
+
+![Deploy](Deploy.png)
 
 
-=======
-View [Trello Board](https://trello.com/b/R4aXBL3X/cicd) 
->>>>>>> 628b52d313f87f7f136e4ed06b07126389c95ada
 
+Your Flask Project should be up and running and viewable in your Azure-Account:
 
-![image-20210106075625422](README.assets/image-20210106075625422.png)
+![Flask](README.assets/flask.png)
+
+Create an [Azure Pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops) and then you can take a look into your Pipeline on Azure DevOps:
+
+![DevOps](AzureDevops.png) 
+
+If you've built the pipeline and connected it to your Github repo, you can now watch how changing the scripts in the repo initiates a new deployment! 
+
+And finally, now you can make an estimate. To do this, go back to the repo's folder in Azure Cloud Shell and do the following steps: 
+
++ Edit the url in make_predict_azure_app.sh to match your website 
+
+  ![AzurePredict](azure_predict.png)
+
++ make the make_predict_azure_app.sh executable with
+
+  ```
+  chmod u+x ./make_predict_azure_app.sh
+  ```
+
++ and then type 
+
+  ```
+  ./make_predict_azure_app.sh
+  ```
+
++ now you should recieve some results 
+
+  ![Webpredict](README.assets/predict_web.png)
+
++ and you can inspect the logs of your webapp by typing
+
+  ```
+  az webapp log tail -n WebAppName
+  ```
++ which will give you the logs 
+  
+![Logs](log.png)
+  
+
+# Improvement Ideas 
+
+To make my pipeline a bit more efficient and robust, I would like to divide my repo into branches. So there would be one branch for development and one for deployment. The development branch should be excluded from the Azure pipeline. 
+
+Other than that, i want to modify Github Actions to ignore changes to certain files. Not every file has an impact on the code. Changes to the Excel file are more important for me and visitors of my Repo to be informed of my future steps and do not effect the code or the Webapp. 
+
