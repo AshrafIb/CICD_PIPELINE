@@ -8,7 +8,7 @@ class CheckSite(HttpUser):
         
     @task
     def get_oredict(self):
-        self.client.post("predict")
+        self.client.post("/predict")
 
 class Locusttest(HttpUser):
     task_set =CheckSite
