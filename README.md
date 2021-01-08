@@ -178,13 +178,15 @@ And finally, now you can make an estimate. To do this, go back to the repo's fol
 
 + Now you can open a browser and go to the [http://localhost:8089](http://localhost:8089/)
 
-+ Now you should see an input mask where you can enter the webpage as well as configurations for the stress test. 
++ Now you should see an input mask where you can enter the webpage as well as configurations for the stress test - I am going to check on Azure-Webapp:
 
   ![locust_config](locust_config.png)
 
 + Finally, you can see the stress test running 
 
   ![locust_test](locust_test.png)
+
++ Everything is up and running! Get the website as well as do a prediction ist working fine! 
 
 # Improvement Ideas 
 
